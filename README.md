@@ -7,11 +7,14 @@ jobs to take, pirates to fight. This repository holds the **downloadable builds*
 
 ## Download and install (Windows)
 
-1. Open the [latest release](https://github.com/RobSpada/Nightlight-Unreal-Releases/releases/latest).
-2. Download **every** file of the release into one folder: `Nightlight-<version>-Setup.exe` and the `.bin` parts
-   beside it (the installer is split to fit GitHub's file size limit).
-3. Run `Nightlight-<version>-Setup.exe` and follow the steps. It installs the Unreal runtime it needs, adds Start-menu
-   and desktop shortcuts, and (if you tick it) opens UDP port 7777 in the Windows firewall so you can host games.
+1. Download **Nightlight-Setup.exe** from the [latest release](https://github.com/RobSpada/Nightlight-Unreal-Releases/releases/latest)
+   (about 20 MB) and run it. It installs the **Nightlight launcher** (no administrator rights needed; Windows asks only
+   if the Visual C++ runtime is missing, or if you tick "allow hosting").
+2. The launcher downloads the game the first time (about 1.1 GB) and then starts it with **PLAY**.
+
+**Updates are automatic:** every time you open the launcher it checks for a new version and downloads only the parts
+of the game that changed, never the whole game again. **REPAIR** re-checks every file if something goes wrong.
+(The many `.bin` files in each release are those parts; you never need to download them yourself.)
 
 To remove it: *Settings > Apps > Nightlight > Uninstall*.
 
@@ -37,6 +40,7 @@ answer requests. Party members walk aboard your ship freely; anyone else asks fi
 | Use / take a seat | E / F | F leave the seat |
 | Star map and jump | | M map, Up / Down choose, Enter jump, J cancel |
 | Weapons | | Left mouse guns, right mouse missiles |
-| Dock | | C at a station port |
+| Dock | | C at a station port (or at Kessler Relay's airlock) |
+| Power and shields | | 1 weapons, 2 shields, 3 engines, 4 life support, 5 even; 6-9 shield facing |
 
 Jobs are on the board in Elyse Station's management office.
